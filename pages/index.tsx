@@ -125,6 +125,8 @@ const Container = tw.div`
   px-10
   grid
   gap-5
+  lg:grid-cols-2
+  xl:grid-cols-3
 `;
 
 const Box = tw.div`
@@ -132,10 +134,8 @@ const Box = tw.div`
   p-6
   rounded-3xl 
   shadow-2xl
-  sm:bg-red-400
-  md:bg-teal-500
-  lg:bg-slate-500
-  xl:bg-blue-700
+  lg:last:col-span-2
+  xl:last:col-span-3
 `;
 
 const BlueBox = tw.div`
@@ -143,6 +143,7 @@ const BlueBox = tw.div`
   rounded-3xl 
   shadow-2xl
   group
+  landscape:bg-teal-500
 `;
 
 const SelectItemHeading = tw.span`
