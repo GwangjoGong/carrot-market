@@ -6,18 +6,19 @@ const Home: NextPage = () => {
     <Container>
       <Box>
         <SelectItemHeading>SelectItem</SelectItemHeading>
-        <SelectItemRow>
-          <SelectItemRowTitle>Grey Chair</SelectItemRowTitle>
-          <SelectItemRowContent>$19</SelectItemRowContent>
-        </SelectItemRow>
-        <SelectItemRow>
-          <SelectItemRowTitle>Grey Chair</SelectItemRowTitle>
-          <SelectItemRowContent>$19</SelectItemRowContent>
-        </SelectItemRow>
-        <SelectItemRow border>
-          <SelectItemRowTitle strong>Total</SelectItemRowTitle>
-          <SelectItemRowContent>$10</SelectItemRowContent>
-        </SelectItemRow>
+        <ul>
+          {[1, 2, 3].map((key) => (
+            <SelectItemRow key={key}>
+              <SelectItemRowTitle>Grey Chair</SelectItemRowTitle>
+              <SelectItemRowContent>$19</SelectItemRowContent>
+            </SelectItemRow>
+          ))}
+          <SelectItemRow>
+            <SelectItemRowTitle strong>Total</SelectItemRowTitle>
+            <SelectItemRowContent>$10</SelectItemRowContent>
+          </SelectItemRow>
+        </ul>
+
         <SelectItemButton>Checkout</SelectItemButton>
       </Box>
 
@@ -107,11 +108,13 @@ const SelectItemHeading = tw.span`
   text-2xl
 `;
 
-const SelectItemRow = tw.div<{ border?: boolean }>`
+const SelectItemRow = tw.div`
   flex
   justify-between
   mt-2
-  ${(p) => (p.border ? 'border-t-2 border-dashed pt-2' : '')}
+  last:border-t-2
+  last:border-dashed
+  last:pt-2
 `;
 
 const SelectItemRowTitle = tw.span<{ strong?: boolean }>`
