@@ -95,6 +95,25 @@ const Home: NextPage = () => {
           <input type="submit" value="Login" className="bg-white" />
         </form>
       </Box>
+
+      <Box>
+        <details className="select-none open:text-white open:bg-indigo-400">
+          <summary className=" cursor-pointer">What is my fav. food</summary>
+          <span className="">김치</span>
+        </details>
+      </Box>
+
+      <Box>
+        <ul className="list-decimal marker:text-teal-500">
+          <li>hi</li>
+          <li>hi</li>
+          <li>hi</li>
+        </ul>
+      </Box>
+
+      <Box>
+        <FileUpload type="file" />
+      </Box>
     </Container>
   );
 };
@@ -356,4 +375,16 @@ const ProductButton = tw.button`
   rounded-xl
   p-3
   w-1/2
+`;
+
+const FileUpload = tw.input`
+  file:border-0 
+  file:rounded-md 
+  file:bg-purple-400 
+  file:text-white 
+  file:px-4 
+  file:py-1 
+  file:transition-colors 
+  file:cursor-pointer 
+  file:hover:bg-purple-700
 `;
