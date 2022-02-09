@@ -271,6 +271,10 @@ const ProductYellowRing = tw.button`
   w-5
   h-5
   bg-yellow-500
+  focus:ring-2
+  ring-offset-2
+  ring-yellow-500
+  transition
 `;
 
 const ProductIndigoRing = tw.button`
@@ -278,6 +282,10 @@ const ProductIndigoRing = tw.button`
   w-5
   h-5
   bg-indigo-500
+  focus:ring-2
+  ring-offset-2
+  ring-indigo-500
+  transition
 `;
 
 const ProductTealRing = tw.button`
@@ -285,6 +293,10 @@ const ProductTealRing = tw.button`
   w-5
   h-5
   bg-teal-500
+  focus:ring-2
+  ring-offset-2
+  ring-teal-500
+  transition
 `;
 
 const ProductToggle = tw.button`
