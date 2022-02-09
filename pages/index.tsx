@@ -59,9 +59,9 @@ const Home: NextPage = () => {
         <ProductCategory>Chair</ProductCategory>
         <ProductOptions>
           <ProductColors>
-            <ProductRing type="radio" />
-            <ProductRing type="radio" />
-            <ProductRing type="radio" />
+            <ProductYellowRing />
+            <ProductIndigoRing />
+            <ProductTealRing />
           </ProductColors>
 
           <div>
@@ -132,6 +132,9 @@ const SelectItemButton = tw.button`
   block
   text-center
   rounded-xl
+  hover:bg-teal-500
+  active:bg-yellow-500
+  focus:text-red-500
 `;
 
 const ProfileHeader = tw.div`
@@ -259,10 +262,29 @@ const ProductOptions = tw.div`
   mt-3
 `;
 
-const ProductColors = tw.div``;
+const ProductColors = tw.div`
+  space-x-3
+`;
 
-const ProductRing = tw.input`
-  mr-3
+const ProductYellowRing = tw.button`
+  rounded-full
+  w-5
+  h-5
+  bg-yellow-500
+`;
+
+const ProductIndigoRing = tw.button`
+  rounded-full
+  w-5
+  h-5
+  bg-indigo-500
+`;
+
+const ProductTealRing = tw.button`
+  rounded-full
+  w-5
+  h-5
+  bg-teal-500
 `;
 
 const ProductToggle = tw.button`
