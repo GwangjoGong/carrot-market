@@ -132,6 +132,10 @@ const Box = tw.div`
   p-6
   rounded-3xl 
   shadow-2xl
+  sm:bg-red-400
+  md:bg-teal-500
+  lg:bg-slate-500
+  xl:bg-blue-700
 `;
 
 const BlueBox = tw.div`
@@ -283,6 +287,7 @@ const ProductHeart = tw.span`
 `;
 
 const ProductThumbnail = tw.div`
+  w-48
   aspect-square
 `;
 
