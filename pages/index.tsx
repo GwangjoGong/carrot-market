@@ -45,8 +45,37 @@ const Home: NextPage = () => {
         </ProfileContent>
       </BlueBox>
 
-      <Box></Box>
-      <Box></Box>
+      <Box>
+        <ProductHeader>
+          <ProductBack>⬅</ProductBack>
+          <ProductActions>
+            <ProductStar>★</ProductStar>
+            <ProductRate>4.9</ProductRate>
+            <ProductHeart>♥</ProductHeart>
+          </ProductActions>
+        </ProductHeader>
+        <ProductThumbnail></ProductThumbnail>
+        <ProductName>Swoon Lounge</ProductName>
+        <ProductCategory>Chair</ProductCategory>
+        <ProductOptions>
+          <ProductColors>
+            <ProductRing type="radio" />
+            <ProductRing type="radio" />
+            <ProductRing type="radio" />
+          </ProductColors>
+
+          <div>
+            <ProductToggle>-</ProductToggle>
+            <ProductQuantity>1</ProductQuantity>
+            <ProductToggle>+</ProductToggle>
+          </div>
+        </ProductOptions>
+
+        <ProductFooter>
+          <ProductPrice>$450</ProductPrice>
+          <ProductButton>Add to cart</ProductButton>
+        </ProductFooter>
+      </Box>
     </Container>
   );
 };
@@ -173,4 +202,100 @@ const ProfileName = tw.span`
 const ProfileLocation = tw.span`
   text-gray-500
   text-lg
+`;
+
+const ProductHeader = tw.div`
+  flex
+  justify-between
+  items-center
+`;
+
+const ProductBack = tw.span`
+  text-lg
+`;
+
+const ProductActions = tw.div``;
+
+const ProductStar = tw.span`
+  text-sm
+  text-yellow-500
+`;
+
+const ProductRate = tw.span`
+  text-sm
+  font-medium
+  ml-1
+`;
+
+const ProductHeart = tw.span`
+  text-lg
+  text-pink-400
+  ml-2
+  shadow-md
+  p-1
+  rounded-md
+`;
+
+const ProductThumbnail = tw.div`
+  aspect-square
+`;
+
+const ProductName = tw.span`
+  text-md
+  font-semibold
+  block
+`;
+
+const ProductCategory = tw.span`
+  text-sm
+  text-gray-500
+  block
+`;
+
+const ProductOptions = tw.div`
+  flex
+  items-center
+  justify-between
+  mt-3
+`;
+
+const ProductColors = tw.div``;
+
+const ProductRing = tw.input`
+  mr-3
+`;
+
+const ProductToggle = tw.button`
+  bg-slate-100
+  text-black
+  text-lg
+  w-8
+  h-8
+  rounded-md
+`;
+
+const ProductQuantity = tw.span`
+  mx-3
+  font-semibold
+  text-lg
+`;
+
+const ProductFooter = tw.div`
+  flex
+  items-center
+  justify-between
+  mt-5
+`;
+
+const ProductPrice = tw.span`
+  text-2xl
+  font-semibold
+`;
+
+const ProductButton = tw.button`
+  bg-blue-500
+  text-white
+  rounded-xl
+  p-3
+  w-1/2
 `;
