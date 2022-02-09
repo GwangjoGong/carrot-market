@@ -77,6 +77,24 @@ const Home: NextPage = () => {
           <ProductButton>Add to cart</ProductButton>
         </ProductFooter>
       </Box>
+
+      <Box>
+        <form className="flex flex-col space-y-2 p-2">
+          <input
+            type="text"
+            required
+            placeholder="Username"
+            className="disabled:bg-gray-500 peer"
+          />
+          <span className="hidden peer-invalid:block text-red-500">
+            This input is invalid
+          </span>
+          <span className="hidden peer-valid:block text-teal-500">
+            This input is valid!
+          </span>
+          <input type="submit" value="Login" className="bg-white" />
+        </form>
+      </Box>
     </Container>
   );
 };
@@ -101,6 +119,7 @@ const BlueBox = tw.div`
   bg-blue-500 
   rounded-3xl 
   shadow-2xl
+  group
 `;
 
 const SelectItemHeading = tw.span`
@@ -203,6 +222,8 @@ const ProfileInfo = tw.div`
 const ProfileName = tw.span`
   font-semibold
   text-xl
+  group-hover:text-red-500
+  transition
 `;
 
 const ProfileLocation = tw.span`
