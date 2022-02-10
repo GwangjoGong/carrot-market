@@ -155,10 +155,22 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@prisma/engines@3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009":
+  version "3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009"
+  resolved "https://registry.npmjs.org/@prisma/engines/-/engines-3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009.tgz#e5c345cdedb7be83d11c1e0c5ab61d866b411256"
+  integrity sha512-qM+uJbkelB21bnK44gYE049YTHIjHysOuj0mj5U2gDGyNLfmiazlggzFPCgEjgme4U5YB2tYs6Z5Hq08Kl8pjA==
+
 "@rushstack/eslint-patch@^1.0.8":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
   integrity sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==
+
+"@tailwindcss/forms@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.4.0.tgz#a46715e347a32d216a3973eb67473bd29ae3798e"
+  integrity sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==
+  dependencies:
+    mini-svg-data-uri "^1.2.3"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -1526,6 +1538,11 @@ mimic-fn@^2.1.0:
   resolved "https://registry.npmjs.org/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
+mini-svg-data-uri@^1.2.3:
+  version "1.4.3"
+  resolved "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.3.tgz#43177b2e93766ba338931a3e2a84a3dfd3a222b8"
+  integrity sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA==
+
 minimatch@^3.0.4:
   version "3.0.5"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.0.5.tgz#4da8f1290ee0f0f8e83d60ca69f8f134068604a3"
@@ -1845,6 +1862,13 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+prisma@^3.9.1:
+  version "3.9.1"
+  resolved "https://registry.npmjs.org/prisma/-/prisma-3.9.1.tgz#7510a8bf06018a5313b9427b1127ce4750b1ce5c"
+  integrity sha512-IGcJAu5LzlFv+i+NNhOEh1J1xVVttsVdRBxmrMN7eIH+7mRN6L89Hz1npUAiz4jOpNlHC7n9QwaOYZGxTqlwQw==
+  dependencies:
+    "@prisma/engines" "3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009"
 
 prop-types@^15.7.2:
   version "15.8.1"
